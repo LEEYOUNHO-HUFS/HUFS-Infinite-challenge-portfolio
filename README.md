@@ -83,7 +83,6 @@
 
 ![image](https://user-images.githubusercontent.com/74258352/102776991-11291e80-43d3-11eb-8417-da847462ab55.png)
 ![image](https://user-images.githubusercontent.com/74258352/102777010-19815980-43d3-11eb-98d7-ef497a0b4ba8.png)
-![image](https://user-images.githubusercontent.com/74258352/102777021-200fd100-43d3-11eb-97c4-56f08cdcb5aa.png)
 ![image](https://user-images.githubusercontent.com/74258352/102777035-269e4880-43d3-11eb-9263-6cbdfdbf2f17.png)
 
 죄와 길에서 “…”의 비율이 높은 이유는 발화자가 말을 하는 도중에 제3자가 자꾸만 끼어들어 말이 도중에 끊겼기 때문입니다. 여러 명의 발화자가 동시다발적으로 자기 할 말만 하고 듣지는 않는, 다소 난장판스러운 분위기에서 방송이 촬영되었기 때문에 말이 여러 번 끊기게 되어 “…”의 비율이 굉장히 높아졌습니다. 다음은 국민의원 에피소드의 발화문입니다.
