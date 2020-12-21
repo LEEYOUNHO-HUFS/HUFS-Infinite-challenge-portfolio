@@ -39,32 +39,32 @@
 ## 2.2 데이터 정제 과정
 이렇게 엑셀로 수집완료한 데이터를 Colab의 알고리즘을 이용하여 형태소별로 품사를 분류하였고, 분류가 완료된 상태의 csv파일을 다운로드하였습니다. 알고리즘의 경우 해당 강의에서 제공된 것이며 아래는 그 캡처화면입니다.
 
-![image](https://user-images.githubusercontent.com/74258352/102775303-ed180e00-43cf-11eb-9427-98bfd9eaf444.png)
+![colab](https://user-images.githubusercontent.com/74258352/102780591-88fa4780-43d9-11eb-8091-69aa7e2a45e1.png)
 
 알고리즘의 경우 Colab과 연동하여 Github에 업로드 되어있으며 알고리즘 작동 절차는 이를 통해 확인할 수 있습니다. 그렇게 얻은 csv파일을 텍스트파일로 열어 엑셀에 복사한 뒤 각 형태소별 등장 빈도를 셀에 추가하여 피벗테이블로 빈도분석을 진행하였습니다.
 
 ## 2.3 언어분석
 발화 횟수 자체가 적은 발화자의 경우 상대빈도가 높아져서 내림차순 분석에 방해가 됐기에 본 분석에서는 제외합니다. 아래는 이해를 돕기 위한 캡처본이며 안내인의 상대빈도가 과하게 높다는 사실을 알 수 있습니다.
 
-![image](https://user-images.githubusercontent.com/74258352/102776576-4ed97780-43d2-11eb-9f9d-523404f9a2b4.png)
+![안내인](https://user-images.githubusercontent.com/74258352/102780672-b2b36e80-43d9-11eb-91df-a2ca978104e2.png)
 
 먼저 아래는 죄와 길 에피소드에서 사용된 명사이다.
 
-![image](https://user-images.githubusercontent.com/74258352/102776608-5ef15700-43d2-11eb-9252-762fe97b44c8.png)
+![죄 명사 2](https://user-images.githubusercontent.com/74258352/102780737-ca8af280-43d9-11eb-8533-a7f26eb9ccfc.png)
 
 명사분석을 통해 대화가 어떤 주제로 이루어졌는지 대략적으로 파악할 수 있습니다. 죄와 길 에피소드의 경우 길성준의 소변방뇨 사건에 대해 변호사를 대동하여 법정 재판을 벌이는 중이라는 사실을 알 수 있습니다. 아래는 국민의원 에피소드에 사용된 명사입니다.
 
-![image](https://user-images.githubusercontent.com/74258352/102776651-77617180-43d2-11eb-8bdf-3ac7115ef107.png)
+![국 명사 2](https://user-images.githubusercontent.com/74258352/102780793-e8585780-43d9-11eb-92cb-f6af986f775f.png)
 
 국민의원의 경우 국민(정확히는 그러한 역할을 맡은 무한도전의 시청자들)이 원하는 법안의 발의에 대하여 국회의원과 함께 의견을 나누고 있음을 알 수 있습니다. 이를 통해 알 수 있는 사실은 두 에피소드가 모두 공통적으로 “법”과 관련한 주제를 다루고 있다는 것이며 동시에 두 에피소드는 모두 근본적으로 예능“방송”의 방송분에 해당합니다. 여기서 두 명사 “법”과 “방송”의 빈도수를 찾아보고 비교하기로 하였습니다. 아래는 그 캡처입니다.
 
-![image](https://user-images.githubusercontent.com/74258352/102776702-92cc7c80-43d2-11eb-9fcc-0384aff19e09.png)
-![image](https://user-images.githubusercontent.com/74258352/102776725-9cee7b00-43d2-11eb-9df3-639446498a7d.png)
+![죄 방송](https://user-images.githubusercontent.com/74258352/102780844-ff974500-43d9-11eb-87f1-a029f7e840ea.png)
+![죄 법](https://user-images.githubusercontent.com/74258352/102780884-0d4cca80-43da-11eb-9acd-34b71aa94c71.png)
 
 죄와 길 에피소드의 경우 “방송”이라는 명사가 상당히 높은 빈도로 합계 6%가 사용되었습니다. 반면 “법”이라는 명사는 0.18%의 사용에 그쳤습니다. 다음은 국민의원 에피소드에서 사용된 명사 “법”과 “방송”입니다.
 
-![image](https://user-images.githubusercontent.com/74258352/102776754-ad9ef100-43d2-11eb-8e64-4faba8cb5e8c.png)
-![image](https://user-images.githubusercontent.com/74258352/102776811-c0b1c100-43d2-11eb-93b8-f1b0de580c1b.png)
+![국 방송](https://user-images.githubusercontent.com/74258352/102780903-16d63280-43da-11eb-8557-085347c75c6a.png)
+![국 법](https://user-images.githubusercontent.com/74258352/102780910-19388c80-43da-11eb-8b39-826841c6c433.png)
 
 국민의원 에피소드에서는 반대로 “법”단어의 빈도수가 4.5%로 높고 “방송”단어의 빈도수가 0.17%로 낮음을 알 수 있습니다. 뿐만 아니라 본 에피소드에서는 법안, 금지법, 법률 등 관련한 단어의 사용이 많았기에 법 자체에 대한 언급은 4.5% 이상일 것입니다.
 
@@ -72,16 +72,16 @@
 
 다음은 각 에피소드에서 사용된 언어부호이다. 위가 국민의원 에피소드, 아래가 죄와 길 에피소드이다.
 
-![image](https://user-images.githubusercontent.com/74258352/102776941-f9519a80-43d2-11eb-99e8-7f240e3310cd.png)
-![image](https://user-images.githubusercontent.com/74258352/102776962-01a9d580-43d3-11eb-9af0-2b65cb891d16.png)
+![국 언어부호](https://user-images.githubusercontent.com/74258352/102780959-35d4c480-43da-11eb-9ccc-8706292df7c3.png)
+![죄 언어부호](https://user-images.githubusercontent.com/74258352/102780968-39684b80-43da-11eb-9612-45127209b7ad.png)
 
 죄와 길 에피소드에서는 “?”가 주로 쓰여 상대방에게 질문을 던져 대답을 유도하는 형식으로 발화를 끝마친 경우가 많았습니다. 이는 서로 오고가는 대화가 끊김이 없이 계속해서 이어짐을 의미합니다. 반면 국민의원 에피소드에서는 “.”이 주로 쓰여 자신의 말을 완결된 하나의 문장으로 끝내는 경우가 많았습니다.
 
 또한 공통적으로 “…”가 많이 사용되었습니다. 특히 죄와길 에피소드에서는 빈도가 약 37%에 달합니다. 아래는 실제 발화문입니다.
 
-![image](https://user-images.githubusercontent.com/74258352/102776991-11291e80-43d3-11eb-8417-da847462ab55.png)
-![image](https://user-images.githubusercontent.com/74258352/102777010-19815980-43d3-11eb-98d7-ef497a0b4ba8.png)
-![image](https://user-images.githubusercontent.com/74258352/102777035-269e4880-43d3-11eb-9263-6cbdfdbf2f17.png)
+![죄](https://user-images.githubusercontent.com/74258352/102781016-4f760c00-43da-11eb-8027-ca3e28f00187.png)
+![죄 2](https://user-images.githubusercontent.com/74258352/102781021-513fcf80-43da-11eb-9e95-529dc8b156cc.png)
+![죄 4](https://user-images.githubusercontent.com/74258352/102781026-5270fc80-43da-11eb-8374-086776b6b384.png)
 
 죄와 길에서 “…”의 비율이 높은 이유는 발화자가 말을 하는 도중에 제3자가 자꾸만 끼어들어 말이 도중에 끊겼기 때문입니다. 여러 명의 발화자가 동시다발적으로 자기 할 말만 하고 듣지는 않는, 다소 난장판스러운 분위기에서 방송이 촬영되었기 때문에 말이 여러 번 끊기게 되어 “…”의 비율이 굉장히 높아졌습니다. 다음은 국민의원 에피소드의 발화문입니다.
 
